@@ -10,7 +10,7 @@ public class Example {
             String name = scan.nextLine();
             String welcome = "";
             LocalTime currentTime = LocalTime.now();
-            if(currentTime.isAfter(LocalTime.parse("23:59:59.999999999"))){
+            if(currentTime.isAfter(LocalTime.parse("23:59:59.99999999"))){
                 welcome = "Доброй ночи, " + name;
             } else if(currentTime.isAfter(LocalTime.parse("18:00:00.000000000"))){
                 welcome = "Добрый вечер, " + name;
